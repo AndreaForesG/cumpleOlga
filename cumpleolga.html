@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        h1 {
+            color: #ff6f61;
+            font-size: 2.5em;
+            animation: bounceIn 1s ease;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: #333;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        .img-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            animation: fadeInImages 2s ease-out;
+        }
+
+        .img-container img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            animation: wiggle 2s infinite ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0); }
+            60% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInImages {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes wiggle {
+            0% { transform: rotate(-3deg); }
+            50% { transform: rotate(3deg); }
+            100% { transform: rotate(-3deg); }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .img-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img-container img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Feliz vida!</h1>
+        <p>Hoy es tu día y quiero aprovechar para recordarte lo increíble que eres. Me siento súper afortunada de tenerte a mi lado, compartiendo risas, anécdotas y esos momentos que siempre me sacan una sonrisa.
+
+            Te deseo un año lleno de cosas geniales, de sueños que se cumplen y muchas risas. Que cada día te traiga algo bueno, porque te lo mereces todo. Gracias por ser como eres, por siempre estar ahí cuando te necesito y por ser mi amiga.
+            
+            ¡Que pases un día increíble, lleno de amor y sorpresas! Te quiero un montón, ¡y que sigan llegando muchos años más juntas! 🎉💕</p>
+        <div class="img-container">
+            <img src="IMG_1289.jpeg" alt="Foto 1">
+            <img src="IMG_1298.jpeg" alt="Foto 2">
+            <img src="IMG_1304.jpeg" alt="Foto 3">
+        </div>
+    </div>
+</body>
+</html>
